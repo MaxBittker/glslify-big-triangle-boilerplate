@@ -11,7 +11,7 @@ varying vec2 uv;
 
 void main() {
   vec3 color;
-  float r = abs(sin(t * 0.05));
+  float r = abs(sin(t / 25));
   if (length(uv) < r && length(uv) > r - 0.1) {
     color = hsv2rgb(vec3(sin(t * 0.01), 0.5, 0.5));
   } else {

@@ -12,6 +12,9 @@ let config = {
     filename: "bundle.js"
   },
   devtool: "#cheap-source-map",
+  devServer: {
+    overlay: true,
+  },
   module: {
     loaders: [
       {

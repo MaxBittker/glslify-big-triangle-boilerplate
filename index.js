@@ -1,4 +1,7 @@
-const regl = require("regl")();
+import {setupOverlay} from "regl-shader-error-overlay";
+setupOverlay();
+
+const regl = require("regl")({});
 
 let fsh = require("./fragment.glsl");
 
